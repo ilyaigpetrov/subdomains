@@ -1,0 +1,21 @@
+{
+  "name": "subterm",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "npm run build",
+    "build": "browserify ./index.js -o ./docs/bundle.js"
+  },
+  "author": "ilyaigpetrov",
+  "private": true,
+  "dependencies": {
+    "local-echo": "ilyaigpetrov/local-echo",
+    "readline-browserify-2": "github:ilyaigpetrov/readline-browserify-2",
+    "xterm": "^3.14.2"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.3"
+  },
+  "browser": {
+    "readline": "readline-browserify-2"
+  }
+}
